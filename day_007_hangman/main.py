@@ -54,4 +54,3 @@ while not end_of_game:
             print("You win.")
 
         print(hangman_art.stages[lives])
-

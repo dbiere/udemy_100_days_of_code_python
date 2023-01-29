@@ -30,9 +30,9 @@ scissors = '''
 choices = [rock, paper, scissors]
 
 user_choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper, or 2 for Scissors: "))
-if user_choice not in range(0,3):
-  print("That's not a valid choice. Ending game.")
-  quit()
+if user_choice not in range(0, 3):
+    print("That's not a valid choice. Ending game.")
+    quit()
 
 print(choices[user_choice])
 print()
@@ -45,10 +45,11 @@ print(choices[computer_choice])
 print()
 
 if user_choice == computer_choice:
-  print("It's a draw!")
-elif computer_choice > user_choice or (computer_choice == 0 and user_choice == 2):
-  print("The computer wins!")
+    print("It's a draw!")
+elif (computer_choice == 0 and user_choice == 2) \
+        or (computer_choice == 1 and user_choice == 0) \
+        or (computer_choice == 2 and user_choice == 1):
+    print("The computer wins!")
 else:
-  print("You win!")
+    print("You win!")
 print()
-
