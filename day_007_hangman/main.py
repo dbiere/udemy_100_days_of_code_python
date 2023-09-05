@@ -1,10 +1,6 @@
-# Step 5
-
 import random
 import hangman_art
 import hangman_words
-
-from replit import clear
 
 chosen_word = random.choice(hangman_words.word_list)
 word_length = len(chosen_word)
@@ -54,3 +50,4 @@ while not end_of_game:
             print("You win.")
 
         print(hangman_art.stages[lives])
+
